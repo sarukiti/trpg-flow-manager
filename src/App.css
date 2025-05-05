@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Flexbox レイアウトを追加 */
+.app-container {
+  display: flex;
+  flex-direction: row; /* 横並び */
+}
+
+.reactflow-wrapper {
+  flex-grow: 1; /* React Flow が利用可能なスペースを埋める */
+  height: 100%;
+}
+
+.detail-panel {
+  width: 300px; /* パネルの幅 */
+  height: 100%;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* 内容が多い場合にスクロール */
+  position: relative; /* 閉じるボタンの位置基準 */
+}
+
+.detail-panel h3 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.detail-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: inherit; /* 親要素のフォントを継承 */
+  font-size: 14px;
+}
+
+.detail-panel .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
